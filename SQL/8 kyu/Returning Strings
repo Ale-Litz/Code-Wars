@@ -1,0 +1,1 @@
+select concat('Hello, ', "name", ' how are you doing today?') "greeting" from "person";
