@@ -1,0 +1,2 @@
+SELECT name, greeting, substring(greetings from '#([0-9]+)') user_id
+FROM greetings;
