@@ -12,12 +12,12 @@ select
 --  last
 from ip_addresses;
 
-
---another resolutions
+----------
 
 SELECT id, last::inet - first::inet as ips_between
 FROM ip_addresses;
 
+----------
 
 SELECT id
         ,((SPLIT_PART(last, '.',  1)::bigint - SPLIT_PART(first, '.',  1)::int)*256^3
